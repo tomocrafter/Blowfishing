@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Blowfishing",
+	"description": "10連ふぐぱんち！",
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://misskey.xyz/*",
+				"https://miss.tomocraft.net/*"
+			],
+			"css": [
+				"main.css"
+			],
+			"js": [
+				"main.js"
+			]
+		}
+	]
+}

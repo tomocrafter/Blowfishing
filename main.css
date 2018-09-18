@@ -1,0 +1,78 @@
+.mk-post-form > .fugu10 > i {
+	display: inline-block;
+}
+
+/* Dark mode */
+.mk-post-form[data-darkmode] > .fugu10 {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0;
+	margin: 8px 4px 0 0;
+	width: 40px;
+	height: 40px;
+	font-size: 1em;
+	color: #fb4e4e;
+	background: transparent;
+	outline: none;
+	border: solid 1px transparent;
+	border-radius: 4px;
+}
+.mk-post-form[data-darkmode] > .fugu10:hover {
+	background: transparent;
+	border-color: rgba(#282C37, 0.5)
+}
+.mk-post-form[data-darkmode] > .fugu10:active {
+	color: rgba(#282C37, 0.6);
+	background: transparent;
+	border-color: rgba(#282C37, 0.5);
+	box-shadow: 0 2px 4px rgba(#000, 0.15) inset;
+}
+
+.mk-post-form[data-darkmode] > .fugu10:focus + .mk-post-form[data-darkmode] > .fugu10:after {
+	content: "";
+	pointer-events: none;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	bottom: -5px;
+	left: -5px;
+	border: 2px solid rgba(#282C37, 0.3);
+	border-radius: 8px;
+}
+
+/* Light mode */
+.mk-post-form:not([data-darkmode]) > .fugu10 {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    margin: 8px 4px 0 0;
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+    color: rgba(251,78,78,0.5);
+    background: transparent;
+    outline: none;
+    border: solid 1px transparent;
+    border-radius: 4px;
+}
+.mk-post-form:not([data-darkmode]) > .fugu10:hover {
+	background: transparent;
+	border-color: rgba(#f6584f, 0.5)
+}
+.mk-post-form:not([data-darkmode]) > .fugu10:active {
+	color: rgba(#f6584f, 0.6);
+	background: transparent;
+	border-color: linear-gradient(to bottom, lighten(#f6584f, 80%) 0%, lighten(#f6584f, 90%) 100%);
+	box-shadow: 0 2px 4px rgba(#000, 0.15) inset;
+}
+.mk-post-form:not([data-darkmode]) > .fugu10:focus + .mk-post-form:not([data-darkmode]) > .fugu10:after {
+	content: "";
+	pointer-events: none;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	bottom: -5px;
+	left: -5px;
+	border: 2px solid rgba(#f6584f, 0.3);
+	border-radius: 8px;
+}
