@@ -28,7 +28,7 @@
 	box-shadow: 0 2px 4px rgba(#000, 0.15) inset;
 }
 
-.mk-post-form[data-darkmode] > .fugu10:focus + .mk-post-form[data-darkmode] > .fugu10:after {
+.mk-post-form[data-darkmode] > .fugu10:focus:after {
 	content: "";
 	pointer-events: none;
 	position: absolute;
@@ -65,7 +65,7 @@
 	border-color: linear-gradient(to bottom, lighten(#f6584f, 80%) 0%, lighten(#f6584f, 90%) 100%);
 	box-shadow: 0 2px 4px rgba(#000, 0.15) inset;
 }
-.mk-post-form:not([data-darkmode]) > .fugu10:focus + .mk-post-form:not([data-darkmode]) > .fugu10:after {
+.mk-post-form:not([data-darkmode]) > .fugu10:focus:after {
 	content: "";
 	pointer-events: none;
 	position: absolute;
