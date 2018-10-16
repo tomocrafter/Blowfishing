@@ -6,8 +6,8 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"https://misskey.xyz/*",
-				"https://miss.tomocraft.net/*"
+				"https://misskey.xyz/deck",
+				"https://miss.tomocraft.net/deck"
 			],
 			"css": [
 				"main.css"
